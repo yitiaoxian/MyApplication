@@ -9,11 +9,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="第一个activity!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:text="点击调到第二个activity"
+        android:onClick=""
+         />
 
 </android.support.constraint.ConstraintLayout>
