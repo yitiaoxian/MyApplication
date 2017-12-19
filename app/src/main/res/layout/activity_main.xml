@@ -16,10 +16,11 @@
         app:layout_constraintTop_toTopOf="parent"
         />
     <Button
+        android:id="@+id/button1t2"
         android:layout_width="368dp"
         android:layout_height="50dp"
         android:text="点击调到第二个activity"
-        android:onClick=""
+        android:onClick="onClick_but1"
          />
 
 </android.support.constraint.ConstraintLayout>
