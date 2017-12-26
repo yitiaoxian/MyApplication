@@ -15,6 +15,7 @@ public class MainActivity extends Activity implements DialogInterface.OnClickLis
     private TextView tv_main_result = null;
     //定义跳转的Button按钮
     private Button btn_main_skip = null;
+    private Button button1to3=null;
     //定义一个startActivityForResult（）方法用到的整型值
     private final int requestCode = 1500;
     @Override
@@ -38,6 +39,15 @@ public class MainActivity extends Activity implements DialogInterface.OnClickLis
 
             }
         });
+        button1to3=(Button)findViewById(R.id.button1to3);
+        button1to3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,ThirdActivity.class);
+                intent.putExtra("skip","我是第一个activity传到第三个activity的");
+                startActivityForResult(intent,requestCode);
+            }
+        });
     }
 
 
@@ -54,6 +64,7 @@ public class MainActivity extends Activity implements DialogInterface.OnClickLis
                 tv_main_result.setText(rs);
                 break;
             }
+
             default:
                 break;
         }
